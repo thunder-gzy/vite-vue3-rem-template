@@ -1,0 +1,19 @@
+{
+  "extends": "@antfu",
+  "rules": {
+    // your rules...
+    "no-console": "off",
+    // Unnecessary { after 'if' condition.
+    "curly": "off",
+    // Missing trailing comma.
+    "comma-dangle": "off",
+    // Closing curly brace appears on the same line as the subsequent block.
+    "brace-style": "off",
+    // Property 'getBlob' does not exist on type 'Viewer'.
+    "no-undef": "off",
+    // "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    // Unexpected tab character.
+    "no-tabs": "off"
+  }
+}
