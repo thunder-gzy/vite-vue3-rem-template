@@ -13,15 +13,15 @@ import { useRoute, useRouter } from 'vue-router'
 // console.log('router', router)
 onMounted(() => {
   const route = useRoute()
-  console.log('params', route.params)
-  console.log('query', route.query)
+  // console.log('params', route.params)
+  // console.log('query', route.query)
 })
 
 </script>
 
 <style scoped lang="less">
 .transitBox {
-  background-image: url('@/assets/img/transit.png');
+  background-image: url('@/assets/img/transit/01.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   
