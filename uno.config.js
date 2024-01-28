@@ -1,5 +1,7 @@
-import { defineConfig } from 'unocss'
-
+import { defineConfig, presetAttributify, presetIcons } from 'unocss'
+import presetUno from '@unocss/preset-uno'
+import presetRemToPx from '@unocss/preset-rem-to-px'
+import transformerCompileClass from '@unocss/transformer-compile-class'
 export default defineConfig({
   theme: {
     extend: {
@@ -8,4 +10,14 @@ export default defineConfig({
       },
     },
   },
+  // plugins: [
+  // ],
+  // presets: [
+  //   presetUno(),
+  //   presetRemToPx(),
+  // ],
+  presets: [presetUno(), presetAttributify(), presetIcons({scale: 1.2, warn: true})],
+  transformers: [
+    transformerCompileClass(),
+  ]
 })

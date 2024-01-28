@@ -1,13 +1,13 @@
 <script setup>
 // import HelloWorld from './components/HelloWorld.vue'
+import Index from '@/views/index.vue'
 </script>
 
 <template>
-  <div class="homeBox">
-    <div class="left">hello</div>
-    <div class="right">world</div>
-  </div>
+ 
   <!-- <HelloWorld msg="Vite + Vue" /> -->
+  <!-- <Index /> -->
+  <router-view></router-view>
 </template>
 
 <style lang="less" scoped>

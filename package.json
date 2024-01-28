@@ -9,10 +9,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.3.11"
+    "pinia": "^2.1.7",
+    "vue": "^3.3.11",
+    "vue-router": "^4.2.5"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.3",
+    "@iconify/json": "^2.2.175",
+    "@unocss/preset-rem-to-px": "^0.58.4",
+    "@unocss/preset-uno": "^0.58.4",
+    "@unocss/reset": "^0.58.4",
+    "@unocss/transformer-compile-class": "^0.58.4",
     "@vitejs/plugin-vue": "^4.5.2",
     "less": "^4.2.0",
     "unocss": "^0.58.4",
