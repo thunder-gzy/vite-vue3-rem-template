@@ -16,8 +16,13 @@ export default defineConfig({
   //   presetUno(),
   //   presetRemToPx(),
   // ],
-  presets: [presetUno(), presetAttributify(), presetIcons({scale: 1.2, warn: true})],
-  transformers: [
-    transformerCompileClass(),
-  ]
+  presets: [
+    presetUno(),
+    presetAttributify(),
+    presetIcons({ scale: 1.2, warn: true }),
+    presetRemToPx({
+      // baseFontSize: 0.25,
+    }),
+  ],
+  transformers: [transformerCompileClass()],
 })

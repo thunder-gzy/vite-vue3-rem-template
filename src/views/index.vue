@@ -1,6 +1,6 @@
 
 <template>
-  <div wfull h100rem class="homeBox">
+  <div class="home-box">
     <div @click="jumpToMain(homeEnum.main)" class="left">主-图站</div>
     <div class="center">
       <div>运营管控平台控制端</div>
@@ -50,11 +50,12 @@ const jumpToMain = (type) => {
 </script>
 
 <style scoped lang="less">
-.homeBox {
+.home-box {
+  width: 100%;
+  height: 100rem;
   background-image: url('@/assets/img/bgc.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-
   .left {
     position: absolute;
     top: 48rem;

@@ -1,7 +1,11 @@
 
 <template>
-  <div wfull h100rem class="transitBox">
-    this is transit
+  <div class="transit-box">
+    <!-- this is transit -->
+    <div class="top">
+      <img src="" alt="">
+    </div>
+    <div class="icon-box"></div>
   </div>
 </template>
 
@@ -20,10 +24,16 @@ onMounted(() => {
 </script>
 
 <style scoped lang="less">
-.transitBox {
+.transit-box {
+  width: 100%;
+  height: 100rem;
   background-image: url('@/assets/img/transit/01.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  
+  .top {
+    background-image: url('@/assets/img/transit/02.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
 }
 </style>
