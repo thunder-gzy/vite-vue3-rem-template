@@ -14,7 +14,12 @@
 <script setup>
 import { homeEnum } from '@/views/data'
 import { useRouter } from 'vue-router'
+import { useCounterStore } from '@/store/one'
 const router = useRouter()
+const counterStore = useCounterStore()
+const { count, name } = counterStore
+console.log('count', count)
+console.log('name', name)
 const jumpToMain = (type) => {
   if (type === homeEnum.main) {
     router.push({
