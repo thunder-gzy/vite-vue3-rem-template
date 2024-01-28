@@ -1,7 +1,6 @@
 
 <template>
   <div class="transit-box">
-    <!-- this is transit -->
     <div class="top">
       <img src="" alt="">
     </div>
@@ -34,6 +33,8 @@ onMounted(() => {
     background-image: url('@/assets/img/transit/02.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    width: 8.875rem;
+    height: 8.875rem;
   }
 }
 </style>

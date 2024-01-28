@@ -4,7 +4,8 @@
     <div @click="jumpToMain(homeEnum.main)" class="left">主-图站</div>
     <div class="center">
       <div>运营管控平台控制端</div>
-      <div>OPERATION CONTROL PLATFORM CONTROL TERMINAL</div>
+      <div>OPERATION CONTROL PLATFORM</div>
+      <div>CONTROL TERMINAL</div>
     </div>
     <div @click="jumpToMain(homeEnum.secondary)" class="right">备-图站</div>
   </div>
@@ -44,9 +45,6 @@ const jumpToMain = (type) => {
   }
 }
 
-// return {
-//   jumpToMain,
-// }
 </script>
 
 <style scoped lang="less">
@@ -60,18 +58,48 @@ const jumpToMain = (type) => {
     position: absolute;
     top: 48rem;
     left: 28.2rem;
+    cursor: pointer;
   }
 
   .center {
     position: absolute;
-    top: 40rem;
-    left: 70rem;
+    top: 44.5rem;
+    left: 55rem;
+    width: 50rem;
+    text-align: center;
+    > div {
+      font-weight: bold;
+
+      &:first-child {
+        font-size: 4.75rem;
+        background: linear-gradient(to top, #a8adb5, #ffffff);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      &:nth-child(2) {
+        font-size: 2.5rem;
+        background: linear-gradient(to top, #a8adb5, #d3d5da);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'DINPro-Bold';
+
+      }
+      &:nth-child(3) {
+        font-size: 2.5rem;
+        background: linear-gradient(to top, #a8adb5, #d3d5da);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'DINPro-Bold';
+
+      }
+    }
   }
 
   .right {
     position: absolute;
     top: 48rem;
     right: 27.3rem;
+    cursor: pointer;
   }
 }
 </style>
