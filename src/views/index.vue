@@ -1,13 +1,7 @@
 
 <template>
   <div class="home-box">
-    <div @click="jumpToMain(homeEnum.main)" class="left">主-图站</div>
-    <div class="center">
-      <div>运营管控平台控制端</div>
-      <div>OPERATION CONTROL PLATFORM</div>
-      <div>CONTROL TERMINAL</div>
-    </div>
-    <div @click="jumpToMain(homeEnum.secondary)" class="right">备-图站</div>
+   hello world
   </div>
 </template>
 
@@ -50,10 +44,11 @@ const jumpToMain = (type) => {
 <style scoped lang="less">
 .home-box {
   width: 100%;
-  height: 100rem;
-  background-image: url('@/assets/img/bgc.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  height: 100%;
+  color: black;
+  // background-image: url('@/assets/img/bgc.png');
+  // background-size: 100% 100%;
+  // background-repeat: no-repeat;
   .left {
     position: absolute;
     top: 48rem;
